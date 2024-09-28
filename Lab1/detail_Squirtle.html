@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .container{
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            
+            border-bottom:1px solid rgb(247, 196, 55);
+            padding-left:20px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            
+        }
+        header>a{
+            color: rgb(247, 196, 55);
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .content{
+            padding-top: 30px;
+            display:flex;
+            flex-direction: column;
+        }
+        .imgbox{
+            
+            display: block;
+            margin: auto;/*auto값은 좌우여백같이*/
+            border-radius: 100%;
+            border: 3px solid rgb(247, 196, 55);
+            overflow: hidden;
+        }
+        .profile{
+            object-fit: cover;
+            
+        }
+        main{
+            padding-top:40px;
+            text-align: center;
+            padding-bottom:40px;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        table{
+            padding: 25px;
+            border-collapse: seperate;
+            border-radius: 10px;
+            border-spacing: 0;
+            margin: auto; 
+            border: 0.3px solid rgb(247, 196, 55);
+            
+            
+        }
+        td{
+            /* border-bottom: 3px solid rgb(247, 196, 55);
+            padding: 10px; */
+            border: none;
+            border-bottom:0.3px solid rgb(247, 196, 55);
+            font-size: 1.2rem;
+            padding-bottom:10px;
+            padding-top: 10px;
+            width: 5cm;
+        }
+        td:last-child{
+            text-align: right;
+            color: #bbb;
+            font-weight: lighter;
+        }
+        td:first-child{
+            font-weight: bold;
+        }
+
+        .LastElement>td{
+            border-bottom: none;
+        }
+
+        
+        
+    </style>
+  </head>
+  <body bgcolor="black">
+    <div class="container">
+        <header>
+            <a href="./index.html">Pokemon List</a>
+        </header>
+        <section class="content">
+            <div class="imgbox">
+            <img class="profile" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Squirtle">
+            </div>
+            <main>
+                Squirtle
+            </main>
+            <table style="table-layout: fixed;">
+                <tbody>
+                    <tr>
+                        <td>Height</td> <td>7 dm</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td> <td>69 hg</td>
+                    </tr>
+                    <tr>
+                        <td>Types</td> <td>grass,poison</td>
+                    </tr>
+                    <tr>
+                        <td>Base Experience</td> <td>64</td>
+                    </tr>
+                    <tr>
+                        <td>Abilities</td> <td>overgrow, chlorophyll</td>
+                    </tr>
+                    <tr>
+                        <td>Hp</td> <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td> <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>Defence</td> <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>Special-Attack</td> <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>Special-Defence</td> <td>65</td>
+                    </tr>
+                    <tr class="LastElement" >
+                        <td >Speed</td> <td>45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        
+        
+    </div>
+    
+  </body>
+</html>
