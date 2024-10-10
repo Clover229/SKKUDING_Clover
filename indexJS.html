@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+        .container{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        header{
+            
+            border-bottom:1px solid rgb(247, 196, 55);
+            padding-left:20px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            
+        }
+        header>a{
+            color: rgb(247, 196, 55);
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .content{
+            /*max-width:164rem;*/
+            display: grid;
+            grid-template-columns: repeat(2, minmax(350px,30%));
+            grid-auto-rows: minmax(150px, auto);
+            place-content: center;
+
+            
+            padding: 2rem 1rem;
+
+            
+            /* margin: 20px; */
+            
+        }
+        /* 모바일분기 */
+        @media screen and (max-width: 700px){
+            .content{
+                grid-template-columns: 500px;
+
+            };
+            
+        }
+
+        .card{
+            display: flex;
+            align-items:center;
+            gap: 1rem;
+            padding:30px;
+            /* height: 10rem; */
+            color: white;
+            height: fit-content;
+            
+            flex: 0 1 calc(75% - 20px);
+            margin: 10px; /*마진을 auto에서 이거로 바꿨더니 알아서 반응형이 되는데..?머지*/
+            padding: 20px;
+            border: 1px solid rgb(247, 196, 55);
+            border-radius: 2cap;
+            text-decoration: none;
+        }
+        .card img {
+            width: 7rem;
+            height: 7rem;
+            position: relative;
+            left: 10px;
+
+        }
+        .info-wrapper{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            position:relative;
+            left: 20px;
+            bottom:15px;
+            gap: 2px;
+            
+        }
+        
+
+        h1{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .info-wrapper>div{
+            color: #bbb;
+        }
+      
+        
+        
+        
+    </style>
+  </head>
+  <body bgcolor="black">
+    <div class="container">
+        <header>
+            <a href="./indexJS.html">Pokemon List</a>
+        </header>
+        <section class="content" >
+            
+            <script src="indexPage.js"></script>
+        </section>
+        
+        
+        
+    </div>
+    
+  </body>
+</html>
