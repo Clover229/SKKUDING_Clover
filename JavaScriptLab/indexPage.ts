@@ -147,8 +147,8 @@ PoketmonList.set( 'Bulbasaur',{
 
 let index=0;
 let contentCard=document.querySelector(".content")!;
-//´À³¦Ç¥ÀÇ ÀÇ¹Ì: content´Â nullÀÌ ¹İµå½Ã ¾Æ´Ï´Ù
-//querySelector ´ë½Å getbyElementbyClassNameÀ» ½è´õ´Ï ¾ÈµÆÀ½. ¿ÍÀÌ/
+//ëŠë‚Œí‘œì˜ ì˜ë¯¸: contentëŠ” nullì´ ë°˜ë“œì‹œ ì•„ë‹ˆë‹¤
+//querySelector ëŒ€ì‹  getbyElementbyClassNameì„ ì¼ë”ë‹ˆ ì•ˆëìŒ. ì™€ì´/
 PoketmonList.forEach((pokemon, name) => {
     let card=document.createElement('div');
     card.classList.add("card");
@@ -179,7 +179,7 @@ PoketmonList.forEach((pokemon, name) => {
     let weightElement=document.createElement('div');
     weightElement.textContent='Weight: '+pokemon.weight;
     
-    //innertext¿Í textContext Â÷ÀÌ? textContext´Â ½ºÅ¸ÀÏ±îÁö °¡Á®¿Â´Ù
+    //innertextì™€ textContext ì°¨ì´? textContextëŠ” ìŠ¤íƒ€ì¼ê¹Œì§€ ê°€ì ¸ì˜¨ë‹¤
     let typesElement =document.createElement('div');
     typesElement.innerText ='Types: '+pokemon.types.join(', ');
 
